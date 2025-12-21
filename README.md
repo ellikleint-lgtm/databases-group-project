@@ -17,17 +17,6 @@ Relevant files:
 - `movie_genres.csv`: movie–genre mapping
 - `genre.csv`: genre reference table
 
-## Data Modeling
-The relational schema is defined in:
-- "datamodeling.sql"
-
-It includes the tables:
-- users
-- movies
-- genres
-- movie_genres
-- ratings
-  
 ## Data Preprocessing
 
 This project includes two Python scripts used for preprocessing the raw MovieLens data 
@@ -43,6 +32,17 @@ before ingestion into the relational database.
   Transforms the multi-genre encoding of movies into a relational format by creating 
   a `movie_genres.csv` file containing `(movieId, genreId)` pairs.  
   This enables a many-to-many relationship between movies and genres in the database schema.
+
+## Data Modeling
+The relational schema is defined in:
+- "datamodeling.sql"
+
+It includes the tables:
+- users
+- movies
+- genres
+- movie_genres
+- ratings
 
 ## Queries
 All SQL queries used for the analysis can be found in:
@@ -62,4 +62,4 @@ To reproduce the analysis:
 4. Execute the Jupyter notebook `objective4_visualizations.ipynb`
 
 ## Authors
-Group project – Databases course
+Group project G – Databases course
